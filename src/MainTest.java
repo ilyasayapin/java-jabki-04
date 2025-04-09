@@ -26,30 +26,45 @@ class MainTest {
     }
 
     @org.junit.jupiter.api.Test
-    void testAdd() {
-    }
-
-    @org.junit.jupiter.api.Test
     void findMax() {
+        int [] a = {-1, 2, 3, 10, -8, 0};
+        Assertions.assertEquals(10, Main.findMax(a));
+
     }
 
     @org.junit.jupiter.api.Test
     void calculateFactorial() {
+        int a = 3;
+        Assertions.assertEquals(6, Main.calculateFactorial(a));
     }
 
     @org.junit.jupiter.api.Test
-    void calculateArea() {
+    void calculateAreaFirst() {
+        int a = 3;
+        Assertions.assertEquals(28, Main.calculateArea(a));
+
     }
 
     @org.junit.jupiter.api.Test
-    void testCalculateArea() {
+    void testCalculateAreaSecond() {
+        int a = 3;
+        int b = 3;
+        Assertions.assertEquals(9, Main.calculateArea(a, b));
     }
 
     @org.junit.jupiter.api.Test
     void calculateAverage() {
+        int a = 3;
+        int b = 4;
+        int c = 5;
+        Assertions.assertEquals(4, Main.calculateAverage(a, b, c));
+
     }
 
     @org.junit.jupiter.api.Test
     void calculateHypotenuse() {
+        int a = 3;
+        int b = 4;
+        Assertions.assertEquals(5, Main.calculateHypotenuse(a, b));
     }
 }
