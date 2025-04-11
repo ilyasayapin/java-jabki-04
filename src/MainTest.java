@@ -46,13 +46,18 @@ class MainTest {
     void findMax() {
         int [] a = {-1, 2, 3, 10, -8, 0};
         Assertions.assertEquals(10, Main.findMax(a));
-
     }
 
     @Test
     void calculateFactorial() {
         int a = 3;
         Assertions.assertEquals(6, Main.calculateFactorial(a));
+    }
+
+    @Test
+    void calculateFactorialSecond() {
+        int a = -2;
+        assertThrows(IllegalArgumentException.class, () -> Main.calculateFactorial(a));
     }
 
     @Test

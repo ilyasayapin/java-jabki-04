@@ -126,6 +126,9 @@ public class Main {
     // 4. Напишите метод, вычисляющий факториал числа с помощью цикла for
     public static int calculateFactorial(int a) {
         int factrl = 1;
+        if (a < 0) {
+            throw new IllegalArgumentException("Число должно быть неотрицательным");
+        }
         for(int x = 1; x <= a; x++) {
             factrl = factrl * x;
         }
