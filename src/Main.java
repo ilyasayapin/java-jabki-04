@@ -37,11 +37,6 @@ public class Main {
 
         // 7. Длина гипотенузы.
         System.out.println("Длина гипотенузы: " + calculateHypotenuse(3, 4));
-
-
-
-
-
     }
 
     /**
@@ -100,11 +95,10 @@ public class Main {
      * 1. 1. Создайте метод sumRange, который принимает два числа (начало и конец диапазона) и возвращает сумму всех чисел между ними (включительно).
      */
     public static int sumRange(int a, int b) {
-        int x = a;
         int res = 0;
-        while (x <= b) {
-            res = res + x;
-            x++;
+        while (a <= b) {
+            res = res + a;
+            a++;
         }
         return res;
     }
@@ -113,12 +107,13 @@ public class Main {
     public static int add(int a, int b) {
         return a + b;
     }
+
     public static String add(String a, String b) {
         return a + b;
     }
 
     // 3. Напишите метод findMax, который принимает массив целых чисел и возвращает его максимальный элемент.
-    public static int findMax(int [] a) {
+    public static int findMax(int[] a) {
         int max = a[0];
         for(int x = 1; x < a.length; x++) {
             if (a[x] > max) {
@@ -141,6 +136,7 @@ public class Main {
     public static double calculateArea(int r) {
         return Math.round(Math.PI * r * r) * 100 / 100.0;
     }
+
     public static int calculateArea(int a, int b) {
         return a * b;
     }
@@ -154,10 +150,6 @@ public class Main {
     public static double calculateHypotenuse (int a, int b) {
         return Math.round(sqrt((a * a) + (b * b))) * 100 / 100.0;
     }
-
-
-
-
 }
 
 
